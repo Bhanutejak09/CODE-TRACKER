@@ -4,5 +4,17 @@
         "platform": "leetcode",
         "topic": "loops",
         "difficulty": "hard"
+    },
+    {
+        "name": "multiply",
+        "platform": "leetcode",
+        "topic": "loops",
+        "difficulty": "easy"
+    },
+    {
+        "name": "subtract",
+        "platform": "leetcode",
+        "topic": "idk",
+        "difficulty": "medium"
     }
 ]

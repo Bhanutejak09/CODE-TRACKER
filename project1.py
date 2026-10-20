@@ -11,7 +11,8 @@ while True:
     print("\n===== CodeTrack =====")
     print("1. Add a problem")
     print("2. View problems")
-    print("3. Exit")
+    print("3.View statistics")
+    print("4. Exit")
 
     choice = input("Choose an option: ")
 
@@ -46,8 +47,25 @@ while True:
                 print("Difficulty:", problem["difficulty"])
 
     elif choice == "3":
+        total = len(problems)
+        easy = 0
+        medium = 0
+        hard = 0
+
+        for problem in problems:
+            if problem["difficulty"].lower() == "easy":
+                easy += 1
+            elif problem["difficulty"].lower() == "medium":
+                medium += 1
+            elif problem["difficulty"].lower() == "hard":
+                hard += 1
+
+        print("\n===== Statistics =====")
+        print("Total problems:", total)
+        print("Easy:", easy)
+        print("Medium:", medium)
+        print("Hard:", hard)
+
+    elif choice == "4":
         print("Keep coding. Keep improving!")
         break
-
-    else:
-        print("Invalid option. Try again.")
