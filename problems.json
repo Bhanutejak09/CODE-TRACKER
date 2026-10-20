@@ -9,12 +9,72 @@
         "name": "multiply",
         "platform": "leetcode",
         "topic": "loops",
-        "difficulty": "easy"
+        "difficulty": "easy",
+        "solved": true
     },
     {
         "name": "subtract",
         "platform": "leetcode",
         "topic": "idk",
         "difficulty": "medium"
+    },
+    {
+        "name": "sum",
+        "platform": "leetcode",
+        "topic": "loops",
+        "difficulty": "Easy"
+    },
+    {
+        "name": "list",
+        "platform": "leetcode",
+        "topic": "lists",
+        "difficulty": "Hard"
+    },
+    {
+        "name": "for loops",
+        "platform": "leetcode",
+        "topic": "while loops",
+        "difficulty": "Medium"
+    },
+    {
+        "name": "cdsv",
+        "platform": "sdvs",
+        "topic": "dsv",
+        "difficulty": "Easy",
+        "solved": true
+    },
+    {
+        "name": "two",
+        "platform": "leetcode",
+        "topic": "loops 1",
+        "difficulty": "Hard"
+    },
+    {
+        "name": "loops",
+        "platform": "leetcode",
+        "topic": "loops",
+        "difficulty": "Easy",
+        "solved": false
+    },
+    {
+        "name": "f",
+        "platform": "er",
+        "topic": "be",
+        "difficulty": "Easy",
+        "solved": false
+    },
+    {
+        "name": "bhanu",
+        "platform": "leetcode",
+        "topic": "loops",
+        "difficulty": "Easy",
+        "solved": false
+    },
+    {
+        "name": "loops",
+        "platform": "leeetcode",
+        "topic": "loops",
+        "difficulty": "Medium",
+        "solved": false
     }
 ]
