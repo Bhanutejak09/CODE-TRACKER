@@ -54,10 +54,13 @@ page = st.sidebar.radio(
 st.title(f"💻 {page}")
 
 if page == "Dashboard":
-    st.write("Track your coding practice and monitor your progress.")
+    st.subheader("Welcome back, Developer! 👋")
+    st.write("Your coding journey, all in one place.")
+    st.caption("Keep solving. Keep learning. Keep growing.")
 
     st.divider()
-    st.subheader("Progress Statistics")
+    st.divider()
+    st.subheader("📊 Your Coding Progress")
 
     col1, col2, col3, col4 = st.columns(4)
 
@@ -65,7 +68,28 @@ if page == "Dashboard":
     col2.metric("Solved", solved)
     col3.metric("Unsolved", unsolved)
     col4.metric("Completion", f"{completion:.1f}%")
+    if completion == 100:
+        st.success("Amazing! You've solved every tracked problem.")
+    elif solved > 0:
+        st.info(f"Great progress! You've solved {solved} out of {total} problems.")
+    else:
+        st.info("Start solving problems to build your coding streak!")
+    st.progress(completion / 100)
+    st.caption(f"You have completed {completion:.1f}% of your coding goals.")
+    st.divider()
+    st.subheader("🕒 Recent Problems")
 
+    if problems:
+        recent_problems = problems[-5:][::-1]
+
+        for problem in recent_problems:
+            status = "✅ Solved" if problem.get("solved", False) else "⏳ Unsolved"
+            st.write(
+                f"**{problem.get('name', 'Untitled')}** — "
+                f"{problem.get('platform', 'Unknown')} | {status}"
+            )
+    else:
+        st.info("No problems added yet. Go to the Problems page to add one.")
     st.progress(completion / 100)
 
     st.divider()
