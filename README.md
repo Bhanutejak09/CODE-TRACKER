@@ -1,6 +1,11 @@
 # CodeTrack — Coding Practice Tracker
 
 A Python-based coding practice tracker built with Streamlit to organize coding problems, monitor progress, and visualize practice statistics through an interactive dashboard.
+## Dashboard Preview
+
+![CodeTrack Dashboard](dashboard.png)
+
+
 
 ## Features
 
